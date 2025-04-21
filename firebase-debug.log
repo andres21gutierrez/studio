@@ -1,0 +1,444 @@
+[debug] [2025-04-21T20:10:18.805Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T20:10:18.810Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /nix/store/b9a1wqzb1vkh5xd2mrp196csvbgv8j13-firebase-tools-14.0.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-04-21T20:10:18.811Z] CLI Version:   14.0.1
+[debug] [2025-04-21T20:10:18.812Z] Platform:      linux
+[debug] [2025-04-21T20:10:18.812Z] Node Version:  v20.18.1
+[debug] [2025-04-21T20:10:18.812Z] Time:          Mon Apr 21 2025 20:10:18 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-04-21T20:10:18.812Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-21T20:10:19.391Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:10:19.393Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:10:19.393Z] [iam] checking project basededatos-40eb1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-21T20:10:19.397Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:19.398Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:19.398Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:10:19.399Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:10:19.401Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions [none]
+[debug] [2025-04-21T20:10:19.402Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions x-goog-quota-user=projects/basededatos-40eb1
+[debug] [2025-04-21T20:10:19.402Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T20:10:19.810Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions 200
+[debug] [2025-04-21T20:10:19.813Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T20:10:19.814Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:19.815Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:19.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:10:19.817Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:10:19.818Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 [none]
+[debug] [2025-04-21T20:10:20.119Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 200
+[debug] [2025-04-21T20:10:20.119Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 {"projectId":"basededatos-40eb1","projectNumber":"273695551303","displayName":"Basededatos","name":"projects/basededatos-40eb1","resources":{"hostingSite":"basededatos-40eb1","realtimeDatabaseInstance":"basededatos-40eb1-default-rtdb"},"state":"ACTIVE","etag":"1_002937f1-a319-4733-80c1-e75a08c8c5c9"}
+[debug] [2025-04-21T20:10:24.481Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:24.482Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:24.482Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:10:24.482Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:10:24.483Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites pageToken=&pageSize=10
+[debug] [2025-04-21T20:10:25.510Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 200
+[debug] [2025-04-21T20:10:25.511Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites {"sites":[{"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-21T20:10:25.512Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:25.512Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:25.512Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:10:25.513Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:10:25.513Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 
+[debug] [2025-04-21T20:10:25.793Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 200
+[debug] [2025-04-21T20:10:25.794Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites {"sites":[{"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-21T20:10:25.795Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:25.797Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:25.797Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:10:25.797Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:10:25.798Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config [none]
+[debug] [2025-04-21T20:10:26.307Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config 200
+[debug] [2025-04-21T20:10:26.310Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config {"projectId":"basededatos-40eb1","databaseURL":"https://basededatos-40eb1-default-rtdb.firebaseio.com","storageBucket":"basededatos-40eb1.firebasestorage.app","apiKey":"AIzaSyC8VLqEV-qqQhqtgbhv9gK1ejwsLkyLo0c","authDomain":"basededatos-40eb1.firebaseapp.com","messagingSenderId":"273695551303"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-21T20:10:35.386Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:35.386Z] No OAuth tokens found
+[debug] [2025-04-21T20:10:35.386Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:10:35.387Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:10:35.387Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 [none]
+[debug] [2025-04-21T20:10:36.259Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 200
+[debug] [2025-04-21T20:10:36.259Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 {"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.3
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ⚠ Compiled with warnings
+
+
+[info] ./node_modules/@opentelemetry/sdk-node/build/src/TracerProviderWithEnvExporter.js
+Module not found: Can't resolve '@opentelemetry/exporter-jaeger' in '/home/user/studio/node_modules/@opentelemetry/sdk-node/build/src'
+
+Import trace for requested module:
+./node_modules/@opentelemetry/sdk-node/build/src/TracerProviderWithEnvExporter.js
+./node_modules/@opentelemetry/sdk-node/build/src/sdk.js
+./node_modules/@opentelemetry/sdk-node/build/src/index.js
+./node_modules/@genkit-ai/core/lib/tracing.js
+./node_modules/@genkit-ai/ai/lib/evaluator.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info] Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at /home/user/studio/.next/server/app/page.js:81:20276
+    at /home/user/studio/.next/server/app/page.js:81:18356
+    at 97638 (/home/user/studio/.next/server/app/page.js:81:18361)
+    at t (/home/user/studio/.next/server/webpack-runtime.js:1:143)
+    at 15868 (/home/user/studio/.next/server/app/page.js:11:70313)
+    at Object.t [as require] (/home/user/studio/.next/server/webpack-runtime.js:1:143)
+    at require (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+Export encountered an error on /page: /, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-04-21T20:11:44.762Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-04-21T20:13:21.284Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T20:13:21.287Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /nix/store/b9a1wqzb1vkh5xd2mrp196csvbgv8j13-firebase-tools-14.0.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-04-21T20:13:21.288Z] CLI Version:   14.0.1
+[debug] [2025-04-21T20:13:21.288Z] Platform:      linux
+[debug] [2025-04-21T20:13:21.288Z] Node Version:  v20.18.1
+[debug] [2025-04-21T20:13:21.288Z] Time:          Mon Apr 21 2025 20:13:21 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-04-21T20:13:21.289Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-21T20:13:21.842Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:13:21.844Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:13:21.844Z] [iam] checking project basededatos-40eb1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-21T20:13:21.846Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:21.847Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:21.847Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:13:21.847Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:13:21.849Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions [none]
+[debug] [2025-04-21T20:13:21.850Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions x-goog-quota-user=projects/basededatos-40eb1
+[debug] [2025-04-21T20:13:21.850Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T20:13:22.223Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions 200
+[debug] [2025-04-21T20:13:22.223Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T20:13:22.225Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:22.225Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:22.225Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:13:22.225Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:13:22.226Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 [none]
+[debug] [2025-04-21T20:13:22.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 200
+[debug] [2025-04-21T20:13:22.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 {"projectId":"basededatos-40eb1","projectNumber":"273695551303","displayName":"Basededatos","name":"projects/basededatos-40eb1","resources":{"hostingSite":"basededatos-40eb1","realtimeDatabaseInstance":"basededatos-40eb1-default-rtdb"},"state":"ACTIVE","etag":"1_002937f1-a319-4733-80c1-e75a08c8c5c9"}
+[debug] [2025-04-21T20:13:28.157Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:28.157Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:28.158Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:13:28.158Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:13:28.159Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites pageToken=&pageSize=10
+[debug] [2025-04-21T20:13:29.084Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 200
+[debug] [2025-04-21T20:13:29.085Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites {"sites":[{"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-21T20:13:29.086Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:29.086Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:29.090Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:13:29.091Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:13:29.091Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 
+[debug] [2025-04-21T20:13:29.403Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 200
+[debug] [2025-04-21T20:13:29.403Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites {"sites":[{"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-21T20:13:29.404Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:29.404Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:29.407Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:13:29.411Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:13:29.412Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config [none]
+[debug] [2025-04-21T20:13:30.119Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config 200
+[debug] [2025-04-21T20:13:30.120Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config {"projectId":"basededatos-40eb1","databaseURL":"https://basededatos-40eb1-default-rtdb.firebaseio.com","storageBucket":"basededatos-40eb1.firebasestorage.app","apiKey":"AIzaSyC8VLqEV-qqQhqtgbhv9gK1ejwsLkyLo0c","authDomain":"basededatos-40eb1.firebaseapp.com","messagingSenderId":"273695551303"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-21T20:13:40.668Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:40.669Z] No OAuth tokens found
+[debug] [2025-04-21T20:13:40.670Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:13:40.670Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:13:40.670Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 [none]
+[debug] [2025-04-21T20:13:41.494Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 200
+[debug] [2025-04-21T20:13:41.494Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 {"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.3
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ⚠ Compiled with warnings
+
+
+[info] ./node_modules/@opentelemetry/sdk-node/build/src/TracerProviderWithEnvExporter.js
+Module not found: Can't resolve '@opentelemetry/exporter-jaeger' in '/home/user/studio/node_modules/@opentelemetry/sdk-node/build/src'
+
+Import trace for requested module:
+./node_modules/@opentelemetry/sdk-node/build/src/TracerProviderWithEnvExporter.js
+./node_modules/@opentelemetry/sdk-node/build/src/sdk.js
+./node_modules/@opentelemetry/sdk-node/build/src/index.js
+./node_modules/@genkit-ai/core/lib/tracing.js
+./node_modules/@genkit-ai/core/lib/action.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+   Skipping linting
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/5) ...
+
+[info] Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at /home/user/studio/.next/server/app/page.js:81:20276
+    at /home/user/studio/.next/server/app/page.js:81:18356
+    at 97638 (/home/user/studio/.next/server/app/page.js:81:18361)
+    at t (/home/user/studio/.next/server/webpack-runtime.js:1:143)
+    at 15868 (/home/user/studio/.next/server/app/page.js:11:70313)
+    at Object.t [as require] (/home/user/studio/.next/server/webpack-runtime.js:1:143)
+    at require (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+Export encountered an error on /page: /, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-04-21T20:14:52.295Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-04-21T20:16:41.291Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T20:16:41.295Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /nix/store/b9a1wqzb1vkh5xd2mrp196csvbgv8j13-firebase-tools-14.0.1/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy
+[debug] [2025-04-21T20:16:41.296Z] CLI Version:   14.0.1
+[debug] [2025-04-21T20:16:41.296Z] Platform:      linux
+[debug] [2025-04-21T20:16:41.297Z] Node Version:  v20.18.1
+[debug] [2025-04-21T20:16:41.297Z] Time:          Mon Apr 21 2025 20:16:41 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-04-21T20:16:41.297Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-21T20:16:42.432Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:16:42.433Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:16:42.433Z] [iam] checking project basededatos-40eb1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-04-21T20:16:42.435Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:42.437Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:42.437Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:16:42.437Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:16:42.439Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions [none]
+[debug] [2025-04-21T20:16:42.439Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions x-goog-quota-user=projects/basededatos-40eb1
+[debug] [2025-04-21T20:16:42.440Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T20:16:43.532Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions 200
+[debug] [2025-04-21T20:16:43.533Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/basededatos-40eb1:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-04-21T20:16:43.537Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:43.539Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:43.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:16:43.540Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:16:43.540Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 [none]
+[debug] [2025-04-21T20:16:43.847Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 200
+[debug] [2025-04-21T20:16:43.847Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1 {"projectId":"basededatos-40eb1","projectNumber":"273695551303","displayName":"Basededatos","name":"projects/basededatos-40eb1","resources":{"hostingSite":"basededatos-40eb1","realtimeDatabaseInstance":"basededatos-40eb1-default-rtdb"},"state":"ACTIVE","etag":"1_002937f1-a319-4733-80c1-e75a08c8c5c9"}
+[debug] [2025-04-21T20:16:50.635Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:50.643Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:50.644Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:16:50.644Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:16:50.655Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites pageToken=&pageSize=10
+[debug] [2025-04-21T20:16:51.630Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 200
+[debug] [2025-04-21T20:16:51.634Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites {"sites":[{"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-21T20:16:51.641Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:51.642Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:51.642Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:16:51.643Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:16:51.644Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 
+[debug] [2025-04-21T20:16:51.916Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites 200
+[debug] [2025-04-21T20:16:51.920Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites {"sites":[{"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-04-21T20:16:51.921Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:51.924Z] No OAuth tokens found
+[debug] [2025-04-21T20:16:51.925Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:16:51.927Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:16:51.930Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config [none]
+[debug] [2025-04-21T20:16:52.637Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config 200
+[debug] [2025-04-21T20:16:52.641Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/basededatos-40eb1/webApps/-/config {"projectId":"basededatos-40eb1","databaseURL":"https://basededatos-40eb1-default-rtdb.firebaseio.com","storageBucket":"basededatos-40eb1.firebasestorage.app","apiKey":"AIzaSyC8VLqEV-qqQhqtgbhv9gK1ejwsLkyLo0c","authDomain":"basededatos-40eb1.firebaseapp.com","messagingSenderId":"273695551303"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-04-21T20:17:14.486Z] No OAuth tokens found
+[debug] [2025-04-21T20:17:14.491Z] No OAuth tokens found
+[debug] [2025-04-21T20:17:14.492Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:17:14.492Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[debug] [2025-04-21T20:17:14.496Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 [none]
+[debug] [2025-04-21T20:17:15.370Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 200
+[debug] [2025-04-21T20:17:15.381Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/basededatos-40eb1/sites/basededatos-40eb1 {"name":"projects/basededatos-40eb1/sites/basededatos-40eb1","defaultUrl":"https://basededatos-40eb1.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.2.3
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ⚠ Compiled with warnings
+
+
+[info] ./node_modules/@opentelemetry/sdk-node/build/src/TracerProviderWithEnvExporter.js
+Module not found: Can't resolve '@opentelemetry/exporter-jaeger' in '/home/user/studio/node_modules/@opentelemetry/sdk-node/build/src'
+
+Import trace for requested module:
+./node_modules/@opentelemetry/sdk-node/build/src/TracerProviderWithEnvExporter.js
+./node_modules/@opentelemetry/sdk-node/build/src/sdk.js
+./node_modules/@opentelemetry/sdk-node/build/src/index.js
+./node_modules/@genkit-ai/core/lib/tracing.js
+./node_modules/@genkit-ai/ai/lib/chat.js
+./node_modules/genkit/lib/common.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+./node_modules/handlebars/lib/index.js
+require.extensions is not supported by webpack. Use a loader instead.
+
+Import trace for requested module:
+./node_modules/handlebars/lib/index.js
+./node_modules/dotprompt/dist/index.js
+./node_modules/@genkit-ai/core/lib/registry.js
+./node_modules/genkit/lib/registry.js
+./node_modules/genkit/lib/genkit.js
+./node_modules/genkit/lib/index.mjs
+./src/ai/flows/recommend-apartments.ts
+
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+
+[info]    Skipping linting
+
+[info]    Collecting page data ...
+
