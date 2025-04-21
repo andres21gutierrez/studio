@@ -1,45 +1,45 @@
 'use client';
 
 import React from 'react';
-import {Map} from '@/components/map';
-import {SearchBar} from '@/components/search-bar';
-import {ApartmentListings} from '@/components/apartment-listings';
-import {ContactForm} from '@/components/contact-form';
-import {Button} from '@/components/ui/button';
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from '@/components/ui/card';
-import {recommendApartments} from '@/ai/flows/recommend-apartments';
-import {useToast} from "@/hooks/use-toast";
+import { Map } from '@/components/map';
+import { SearchBar } from '@/components/search-bar';
+import { ApartmentListings } from '@/components/apartment-listings';
+import { ContactForm } from '@/components/contact-form';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { recommendApartments } from '@/ai/flows/recommend-apartments';
+import { useToast } from "@/hooks/use-toast";
 
 const mockApartments = [
   {
     id: '1',
     title: 'Acogedor Estudio en el Centro',
-    imageUrl: 'https://picsum.photos/400/300',
+    imageUrl: 'https://a0.muscache.com/im/pictures/miso/Hosting-30931885/original/6e6b084c-c60f-4470-a5a1-052eaf784ffb.jpeg?im_w=1200',
     description: 'Un estudio luminoso y moderno en el corazón de la ciudad.',
     price: '$1,500/mes',
-    location: {lat: 37.7749, lng: -122.4194}, // San Francisco
+    location: { lat: 37.7749, lng: -122.4194 }, // San Francisco
   },
   {
     id: '2',
     title: 'Suite de Lujo con Dos Habitaciones',
-    imageUrl: 'https://picsum.photos/401/300',
+    imageUrl: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/495151043.jpg?k=2627cc0d8dbc03779b41e2ae2d8c895667616ed625da7025bb3a58ccade7e878&o=',
     description: 'Una espaciosa suite de dos habitaciones con impresionantes vistas a la ciudad.',
     price: '$3,200/mes',
-    location: {lat: 34.0522, lng: -118.2437}, // Los Angeles
+    location: { lat: 34.0522, lng: -118.2437 }, // Los Angeles
   },
   {
     id: '3',
     title: 'Encantador Apartamento de Una Habitación',
-    imageUrl: 'https://picsum.photos/402/300',
+    imageUrl: 'https://a0.muscache.com/im/pictures/hosting/Hosting-1310176124824671685/original/682294fd-e2af-49ed-a4f5-39ca241e1621.jpeg?im_w=1200',
     description: 'Un apartamento acogedor de una habitación en un barrio residencial tranquilo.',
     price: '$2,000/mes',
-    location: {lat: 37.7749, lng: -122.4194}, // San Francisco
+    location: { lat: 37.7749, lng: -122.4194 }, // San Francisco
   },
 ];
 
 export default function Home() {
   const [recommendations, setRecommendations] = React.useState<string | null>(null);
-  const {toast} = useToast();
+  const { toast } = useToast();
 
   const handleGetRecommendations = async () => {
     try {
@@ -58,24 +58,30 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto p-4">
-      <header className="mb-8 rounded-lg shadow-md p-6">
-        <h1 className="text-3xl font-bold text-primary">Rentify Homes</h1>
-        <p className="text-muted-foreground">Encuentra tu apartamento perfecto.</p>
+    <div className="min-h-screen bg-white">
+      <header className="flex flex-col items-center justify- text-center px-4">
+        {/* Título principal */}
+        <h1 className="text-6xl sm:text-8xl font-extrabold text-gray-800 dark:text-white tracking-tight leading-tight mb-4 drop-shadow-lg">
+          Sumaq<span className="text-primary">Wasi</span>
+        </h1>
+        {/* Subtítulo opcional */}
+        <p className="text-lg sm:text-2xl text-gray-600 dark:text-gray-300 max-w-xl mx-auto mt-2 mb-16">
+          Tu espacio de gestión y desarrollo con identidad local.
+        </p>
+        {/* Fondo con animación sutil o un mapa visual */}
+        <Map className="absolute inset-0 -z-10 opacity-40 blur-sm scale-105" />
+
+        {/* Superposición para mayor contraste si el fondo es cargado */}
+        <div className="absolute inset-0 bg-white/70 dark:bg-black/50 -z-10" />
+
+        
+
+        
       </header>
 
-      <section className="mb-8 rounded-lg shadow-md p-6">
-        <SearchBar/>
-      </section>
-
-      <section className="mb-8 rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-semibold mb-4">Mapa Interactivo</h2>
-        <Map/>
-      </section>
-
-      <section className="mb-8 rounded-lg shadow-md p-6">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-semibold mb-4">Listado de Apartamentos</h2>
-        <ApartmentListings apartments={mockApartments}/>
+        <ApartmentListings apartments={mockApartments} />
       </section>
 
       <section className="mb-8 rounded-lg shadow-md p-6">
@@ -100,11 +106,11 @@ export default function Home() {
 
       <section className="mb-8 rounded-lg shadow-md p-6">
         <h2 className="text-2xl font-semibold mb-4">Contáctanos</h2>
-        <ContactForm/>
+        <ContactForm />
       </section>
 
-      <footer className="text-center text-muted-foreground">
-        <p>&copy; {new Date().getFullYear()} Rentify Homes. Todos los derechos reservados.</p>
+      <footer className="text-center text-gray-500 mt-12">
+        <p>&copy; {new Date().getFullYear()} SumaWasi. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
