@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Map } from '@/components/map';
 import { SearchBar } from '@/components/search-bar';
 import { ApartmentListings } from '@/components/apartment-listings';
 import { ContactForm } from '@/components/contact-form';
@@ -69,14 +68,21 @@ export default function Home() {
           Tu espacio de gestión y desarrollo con identidad local.
         </p>
         {/* Fondo con animación sutil o un mapa visual */}
-        <Map className="absolute inset-0 -z-10 opacity-40 blur-sm scale-105" />
+        <div className="w-full h-64 mb-8">
+          <iframe
+            width="100%"
+            height="100%"
 
+            frameBorder="0"
+            scrolling="no"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-69.65%2C-22.90%2C-57.30%2C-09.67&amp;layer=mapnik&amp;marker=-16.50%2C-68.15"          />
+        </div>
         {/* Superposición para mayor contraste si el fondo es cargado */}
         <div className="absolute inset-0 bg-white/70 dark:bg-black/50 -z-10" />
 
-        
 
-        
+
+
       </header>
 
       <section className="py-12 px-4 sm:px-6 lg:px-8">
