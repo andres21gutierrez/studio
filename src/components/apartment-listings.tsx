@@ -19,7 +19,7 @@ export const ApartmentListings: React.FC<ApartmentListingsProps> = ({apartments}
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {apartments.map((apartment) => (
-        <Card key={apartment.id} className="shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-105">
+        <Card key={apartment.id} className="shadow-md hover:shadow-lg transition-shadow duration-300 hover:scale-105 rounded-lg">
           <CardHeader>
             <CardTitle>{apartment.title}</CardTitle>
           </CardHeader>
@@ -28,7 +28,7 @@ export const ApartmentListings: React.FC<ApartmentListingsProps> = ({apartments}
             <CardDescription>{apartment.description}</CardDescription>
             <p className="font-semibold">{apartment.price}</p>
             <p className="text-sm text-muted-foreground">
-              Location: {apartment.location.lat}, {apartment.location.lng}
+              Ubicación: {apartment.location.lat}, {apartment.location.lng}
             </p>
           </CardContent>
         </Card>

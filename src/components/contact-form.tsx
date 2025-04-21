@@ -9,24 +9,24 @@ export const ContactForm = () => {
     <form className="space-y-4">
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-muted-foreground">
-          Name
+          Nombre
         </label>
-        <Input type="text" id="name" placeholder="Your Name" className="shadow-sm"/>
+        <Input type="text" id="name" placeholder="Tu Nombre" className="shadow-sm"/>
       </div>
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-muted-foreground">
-          Email
+          Correo Electrónico
         </label>
-        <Input type="email" id="email" placeholder="Your Email" className="shadow-sm"/>
+        <Input type="email" id="email" placeholder="Tu Correo Electrónico" className="shadow-sm"/>
       </div>
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-muted-foreground">
-          Message
+          Mensaje
         </label>
-        <Textarea id="message" placeholder="Your Message" rows={4} className="shadow-sm"/>
+        <Textarea id="message" placeholder="Tu Mensaje" rows={4} className="shadow-sm"/>
       </div>
       <Button type="submit" className="w-full">
-        Send Message
+        Enviar Mensaje
       </Button>
     </form>
   );

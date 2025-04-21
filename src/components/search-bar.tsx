@@ -46,7 +46,7 @@ export const SearchBar = () => {
       <div className="flex items-center space-x-2">
         <Input
           type="text"
-          placeholder="Search for apartments..."
+          placeholder="Buscar apartamentos..."
           className="rounded-full shadow-md"
           value={location}
           onChange={handleLocationChange}
@@ -54,56 +54,56 @@ export const SearchBar = () => {
         <Popover open={isFilterOpen} onOpenChange={setIsFilterOpen}>
           <PopoverTrigger asChild>
             <Button variant="outline" className="rounded-full shadow-md">
-              Filters
+              Filtros
             </Button>
           </PopoverTrigger>
           <PopoverContent className="w-80 p-4">
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-muted-foreground">Price Range</label>
+                <label className="block text-sm font-medium text-muted-foreground">Rango de Precio</label>
                 <div className="flex items-center space-x-2">
-                  <p>${priceRange[0]}</p>
+                  ${priceRange[0]}
                   <Slider
                     defaultValue={priceRange}
                     max={5000}
                     step={100}
                     onValueChange={handlePriceRangeChange}
                   />
-                  <p>${priceRange[1]}</p>
+                  ${priceRange[1]}
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-medium text-muted-foreground">Amenities</label>
+                <label className="block text-sm font-medium text-muted-foreground">Comodidades</label>
                 <div className="flex flex-wrap space-x-2">
                   <Button
                     variant={amenities.includes('gym') ? 'default' : 'outline'}
                     size="sm"
                     onClick={() => handleAmenityChange('gym')}
                   >
-                    Gym
+                    Gimnasio
                   </Button>
                   <Button
                     variant={amenities.includes('pool') ? 'default' : 'outline'}
                     size="sm"
                     onClick={() => handleAmenityChange('pool')}
                   >
-                    Pool
+                    Piscina
                   </Button>
                   <Button
                     variant={amenities.includes('parking') ? 'default' : 'outline'}
                     size="sm"
                     onClick={() => handleAmenityChange('parking')}
                   >
-                    Parking
+                    Estacionamiento
                   </Button>
                 </div>
               </div>
               <div className="flex justify-between">
                 <Button variant="ghost" size="sm" onClick={handleClearFilters}>
-                  Clear
+                  Limpiar
                 </Button>
                 <Button size="sm" onClick={handleApplyFilters}>
-                  Apply
+                  Aplicar
                 </Button>
               </div>
             </div>
@@ -113,5 +113,3 @@ export const SearchBar = () => {
     </div>
   );
 };
-
-    
