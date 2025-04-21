@@ -442,3 +442,49 @@ Import trace for requested module:
 
 [info]    Collecting page data ...
 
+[info]    Generating static pages (0/5) ...
+
+[info] Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+ReferenceError: window is not defined
+    at /home/user/studio/.next/server/app/page.js:81:20276
+    at /home/user/studio/.next/server/app/page.js:81:18356
+    at 97638 (/home/user/studio/.next/server/app/page.js:81:18361)
+    at t (/home/user/studio/.next/server/webpack-runtime.js:1:143)
+    at 15868 (/home/user/studio/.next/server/app/page.js:11:70313)
+    at Object.t [as require] (/home/user/studio/.next/server/webpack-runtime.js:1:143)
+    at require (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:133:10079)
+    at u (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:646)
+    at U (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:10492)
+    at W (/home/user/studio/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:92:13199)
+Export encountered an error on /page: /, exiting the build.
+
+[info]  ⨯ Next.js build worker exited with code: 1 and signal: null
+
+[debug] [2025-04-21T20:18:26.883Z] Error: ENOENT: no such file or directory, open '/home/user/studio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-04-21T20:19:01.441Z] ----------------------------------------------------------------------
+[debug] [2025-04-21T20:19:01.445Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /nix/store/b9a1wqzb1vkh5xd2mrp196csvbgv8j13-firebase-tools-14.0.1/lib/node_modules/firebase-tools/lib/bin/firebase.js init
+[debug] [2025-04-21T20:19:01.446Z] CLI Version:   14.0.1
+[debug] [2025-04-21T20:19:01.446Z] Platform:      linux
+[debug] [2025-04-21T20:19:01.447Z] Node Version:  v20.18.1
+[debug] [2025-04-21T20:19:01.447Z] Time:          Mon Apr 21 2025 20:19:01 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-04-21T20:19:01.447Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-21T20:19:02.144Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-21T20:19:02.145Z] > authorizing via signed-in user (andy21614113@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/studio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
